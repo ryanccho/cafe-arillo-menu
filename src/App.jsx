@@ -1,17 +1,18 @@
-import { useState } from 'react';
-import './App.css';
+import { useEffect, useState } from 'react';
+import Menu from './components/Menu';
+import './styles/App.css';
 
-function App() {
-  const [count, setCount] = useState(0);
+const App = () => {
+  // setup states
+
+  // set effects
+  useEffect(() => { console.log("Hello world") });
 
   return (
-    <>
-      <div>
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-      </div>
-    </>
+    <div>
+      <p>Menu</p>
+      <Menu />
+    </div>
   );
 }
 

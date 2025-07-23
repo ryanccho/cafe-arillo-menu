@@ -1,7 +1,7 @@
 // src/components/Menu.js
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { ref, onValue } from "firebase/database";
-import { database } from "../firebase";
+import { database } from "../firebase/firebase";
 
 const Menu = () => {
   const [menuItems, setMenuItems] = useState({});
@@ -17,7 +17,7 @@ const Menu = () => {
   }, []);
 
   return (
-    <div className="menu">
+    <div className="Menu">
       {Object.entries(menuItems).map(([name, info]) => (
         <div
           key={name}

@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Database Imports/Exports
+cafe-arillo-rtdb.json
