@@ -16,18 +16,50 @@ const Menu = () => {
     return () => unsubscribe(); // clean up listener
   }, []);
 
+  const categoryOrder = ["specialtyDrinks", "pourovers", "sweets"];
+  const itemOrders = {
+    pourovers: ["narino", "huila"],
+    specialtyDrinks: ["milkBrew", "tonic"],
+    sweets: ["cookie", "keyLimeBar", "cupcake"]
+  };
+  const categoryDisplayNames = {
+    specialtyDrinks: "Specialty Drinks",
+    pourovers: "Pourovers",
+    sweets: "Sweets",
+  };
+
   return (
     <div className="Menu">
-      {Object.entries(menuItems).map(([name, info]) => (
-        <div
-          key={name}
-          className={`menu-item ${info.soldOut ? "sold-out" : ""}`}
-          style={{ opacity: info.soldOut ? 0.4 : 1 }}
-        >
-          <span className="item-name">{name}</span> — ${info.price}{" "}
-          {info.soldOut && <strong>(Sold Out)</strong>}
-        </div>
-      ))}
+      <h1>café arillo</h1>
+      {categoryOrder.map((categoryName) => {
+        const items = menuItems[categoryName];
+        return (
+          <div key={categoryName}>
+            <h2 className="category-title">{categoryDisplayNames[categoryName]}</h2>
+
+            {categoryName === "sweets" && (
+              <p className="category-note">
+                All items made in-house and guaranteed nut-free (like Kobe).
+              </p>
+            )}
+
+            {itemOrders[categoryName].map((itemKey) => {
+              const info = items[itemKey];
+              return (
+                <div
+                  key={itemKey}
+                  className={`menu-item ${info.soldOut ? "sold-out" : ""}`}
+                  style={{ opacity: info.soldOut ? 0.4 : 1 }}
+                >
+                  <span className="item-name">{info.name}</span> — ${info.price.toFixed(2)}{" "}
+                  {info.soldOut && <strong>(Sold Out)</strong>}
+                  <p className="item-description">{info.description}</p>
+                </div>
+              );
+            })}
+          </div>
+        );
+      })}
     </div>
   );
 };

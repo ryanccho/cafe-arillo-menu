@@ -1,6 +1,17 @@
 #root {
-  max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+}
+
+.background img {
+  position: absolute;
+  max-width: 100vw;
+  z-index: -1;
+}
+
+.Menu {
+  z-index: 1;
+}
+
+.kobe-chase-cup {
+  max-width: 100vw;
 }
