@@ -30,7 +30,6 @@ const Menu = () => {
 
   return (
     <div className="Menu">
-      <h1>café arillo</h1>
       {categoryOrder.map((categoryName) => {
         const items = menuItems[categoryName];
         return (

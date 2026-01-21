@@ -1,0 +1,52 @@
+{
+  "menu": {
+    "specialtyDrinks": {
+      "milkBrew": {
+        "name": "Cold Milk Brew",
+        "description": "Cold Brewed in Minor Figures Oat Milk",
+        "price": 3,
+        "soldOut": false
+      },
+      "tonic": {
+        "name": "Strawberry Cold Brew Tonic",
+        "description": "Housemade Strawberry Syrup, Cold Brew, Lime Soda Water",
+        "price": 3,
+        "soldOut": false
+      }
+    },
+    "pourovers": {
+      "narino": {
+        "name": "Columbia, Narino",
+        "description": "Brisa Eterna - Washed Sidra<br>Notes: Pink Lemonade, Honeydew, Yellow Peach",
+        "price": 4,
+        "soldOut": false
+      },
+      "huila": {
+        "name": "Columbia, Huila",
+        "description": "Finca Monteblanco - Mango Co-Ferment Washed Purple Caturra<br>Notes: Propitious Mango, Sakeru Gummy, Oolong",
+        "price": 4,
+        "soldOut": false
+      }
+    },
+    "sweets": {
+      "cookie": {
+        "name": "Chocolate Chip Cookie",
+        "description": "Semi-sweet chocolate chips and puddles of dark chocolate, finished with sea salt. Inspired by Kobe's paws.",
+        "price": 2,
+        "soldOut": false
+      },
+      "cupcake": {
+        "name": "Key Lime Pie Bar",
+        "description": "Housemade key lime pie filling on a graham cracker crust topped with freshly whipped cream. Inspired by Kobe's favorite toy.",
+        "price": 2,
+        "soldOut": false
+      },
+      "keyLimeBar": {
+        "name": "Carrot Cupcake",
+        "description": "Ginger, nutmeg, and cinnamon-spiced carrot cake with cream cheese frosting and a fondant carrot topper. Inspired by Kobe's staple breakfast.",
+        "price": 2,
+        "soldOut": false
+      }
+    }
+  }
+}

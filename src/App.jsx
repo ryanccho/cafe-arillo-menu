@@ -4,23 +4,29 @@ import './styles/App.css';
 import colorSplash from './assets/images/color_splash.jpg';
 import colorStars from './assets/images/color_stars.png';
 import kobeChaseCup from './assets/images/kobe_chase_cup.png';
+import menuImage from './assets/images/menu_single_page_mobile.jpg';
 
 const App = () => {
-  // setup states
-
   // set effects
   useEffect(() => { console.log("Hello world") });
 
-  return (
-    <>
-      <div className='background'>
-        <img src={colorSplash} />
-        <img src={colorStars} />
-      </div>
-      <Menu />
-      <img className='kobe-chase-cup' src={kobeChaseCup} />
-    </>
-  );
+  return (<div>
+    <img className='menu-image' src={menuImage}/>
+  </div>);
+
+  // return (
+  //   <>
+  //     <div className='background'>
+  //       {/* <img src={colorSplash} className='color-splash' /> */}
+  //       {/* <img src={colorStars} /> */}
+  //     </div>
+  //     <div className='page-content'>
+  //       <h1>café arillo</h1>
+  //       {/* <Menu /> */}
+  //       <img className='kobe-chase-cup' src={kobeChaseCup} />
+  //     </div>
+  //   </>
+  // );
 }
 
 export default App;

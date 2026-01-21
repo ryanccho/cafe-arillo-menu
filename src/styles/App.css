@@ -1,14 +1,32 @@
+.menu-image {
+  max-width: 100%;
+}
+
 #root {
   margin: 0 auto;
+  background-color: #FFF9ED;
+  color: #401E09;
 }
 
 .background img {
-  position: absolute;
-  max-width: 100vw;
-  z-index: -1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+}
+
+.color-splash {
+  padding: 1em;
+}
+
+.page-content {
+  padding: 1.75em 1em;
 }
 
 .Menu {
+  color: #401E09;
   z-index: 1;
 }
 

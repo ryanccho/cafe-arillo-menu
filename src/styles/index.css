@@ -1,26 +1,62 @@
+@font-face {
+  font-family: 'Ahsing';
+  src: url('Ahsing.woff2') format('woff2'),
+    url('Ahsing.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'FONTSPRING DEMO - The Seasons';
+  src: url('FONTSPRINGDEMO-TheSeasonsBold.woff2') format('woff2'),
+    url('FONTSPRINGDEMO-TheSeasonsBold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Aileron';
+  src: url('Aileron-Regular.woff2') format('woff2'),
+    url('Aileron-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Aileron';
+  src: url('Aileron-Italic.woff2') format('woff2'),
+    url('Aileron-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
-  box-sizing: border-box;
+  font-size: 28px;
   background-color: #FFF9ED;
-  color: #401E09;
 }
 
 h1 {
   margin: 0;
-  font-size: 3.2em;
+  font-family: 'Ahsing', sans-serif;
+  font-size: 40px;
+  font-weight: 100;
+}
+
+h2 {
+  margin: 0;
 }
 
 p {
   margin: 0;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
 }
 
 button {
@@ -34,23 +70,7 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
+
 button:hover {
   border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
 }
